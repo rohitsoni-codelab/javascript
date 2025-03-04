@@ -38,5 +38,13 @@ for (const elm of arr)
 
 
 
+// let arr=[4,6,2,7,23,11]
+//for each loop
 
-//foreach 
+console.log("\n forEach Loops")
+
+arr.forEach(elm2 => {console.log(elm2)});
+
+//we can pass multiple parameteres in forEach loop
+
+arr.forEach((eml2,i,arr)=>{console.log(eml2,i,arr)})

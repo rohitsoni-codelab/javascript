@@ -1,3 +1,16 @@
+/*
+Using Map we can do following operatins....
+1).toUpperCase
+2)user.map(Number)
+3)
+
+
+*/
+
+
+
+
+
 //CHANGING TO UPPER CASE...
 const nam=['rohit','raghv','kanhiya','radha']
 const upperNam=nam.map((item,index)=>

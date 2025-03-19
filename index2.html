@@ -1,0 +1,39 @@
+<!-- parent and child relation in DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>parent child relation</title>
+  </head>
+  <body style="background-color: black; padding: 15px; color: white">
+    <div class="parent">
+      <div class="day">Sunday</div>
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thrusday</div>
+      <div class="day">Friday</div>
+      <div class="day">Satarday</div>
+    </div>
+    <script>
+        console.log("hello js")
+
+        const parentDiv= document.querySelector('.parent');
+        console.log(parentDiv)
+        console.log(parentDiv.children)
+        for (let index = 0; index < parentDiv.children.length; index++) {
+            console.log(parentDiv.children[index].innerHTML);   
+        }
+        console.log(parentDiv.firstElementChild.innerHTML);
+
+        const childDiv=document.querySelector('.day')
+        console.log(childDiv)
+        console.log(childDiv.parentNode)
+        console.log(childDiv.nextElementSibling)
+
+      </script>
+  
+  </body>
+</html>

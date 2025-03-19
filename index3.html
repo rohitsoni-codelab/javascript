@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating new elements</title>
+</head>
+<body style="background-color: black; color: white;padding: 10px;">
+    <div class="parent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita magni ullam qui iure iusto voluptas natus exercitationem. Assumenda omnis nobis sapiente repellat iusto iure, ut voluptate distinctio ab. Quibusdam doloremque, architecto nisi repellendus nostrum sint quia accusantium reiciendis molestias, autem aliquid aspernatur impedit ullam expedita exercitationem neque suscipit.
+    </div>
+</body>
+<script>
+    console.log(document.querySelector('div'))
+    const div=document.querySelector('div')
+    div.className="div-class"
+    div.id=Math.round(Math.random()*10+1)
+</script>
+</html>

@@ -13,7 +13,7 @@
   <script>
 
     //Adding element
-    
+
     function addCourse(course) {
       const ul = document.querySelector("ul");//====> if ul already exists then only add course name
       
@@ -27,5 +27,18 @@
       // document.body.ul.appendChild(li)===========> ul is not direct child of body
     }
     addCourse("python");
+    addCourse("java")
+
+    //Optimize way of adding new elements=======>
+
+    function optiAddCourse(course)
+    {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(course))
+        document.querySelector('ul').appendChild(li)
+    }
+
+    optiAddCourse("Mojo")
+    optiAddCourse("Ruby")
   </script>
 </html>

@@ -51,7 +51,7 @@
     pos.replaceWith(modiVal)
 
     //-----------remove----------->
-    const removePos=document.querySelector("li:last-child")
+    const removePos=document.querySelector("li:last-child")//important line
     console.log(removePos);
     removePos.remove()
     console.log(document.querySelectorAll('li').forEach((li)=>console.log(li.innerHTML)))//===>displaying the list

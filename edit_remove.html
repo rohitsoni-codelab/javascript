@@ -11,34 +11,44 @@
     </ul>
   </body>
   <script>
-
     //Adding element
 
     function addCourse(course) {
-      const ul = document.querySelector("ul");//====> if ul already exists then only add course name
-      
+      const ul = document.querySelector("ul"); //====> if ul already exists then only add course name
+
       if (ul) {
         const li = document.createElement("li");
         li.innerHTML = `${course}`;
         document.querySelector("ul").appendChild(li);
-      } else {
+      }
+       else {
         console.log("No list is present");
       }
       // document.body.ul.appendChild(li)===========> ul is not direct child of body
     }
     addCourse("python");
-    addCourse("java")
+    addCourse("java");
 
     //Optimize way of adding new elements=======>
 
-    function optiAddCourse(course)
-    {
-        const li=document.createElement('li')
-        li.appendChild(document.createTextNode(course))
-        document.querySelector('ul').appendChild(li)
+    function optiAddCourse(course) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(course));
+      document.querySelector("ul").appendChild(li);
     }
 
-    optiAddCourse("Mojo")
-    optiAddCourse("Ruby")
+    optiAddCourse("Mojo");
+    optiAddCourse("Ruby");
+    optiAddCourse("Cpp");
+
+    //------------Edit------------>
+    
+    console.log("hello");
+    const pos = document.querySelector("li:nth-child(2)");
+    console.log(pos);
+    const modiVal=document.createElement('li')
+    modiVal.textContent="TypeScript"
+    pos.replaceWith(modiVal)
+
   </script>
 </html>

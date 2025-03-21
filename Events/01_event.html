@@ -16,21 +16,27 @@
     </ul>
 </body>
 <script>
-    document.querySelector("#images").addEventListener('click',function(e){
-        alert("ul clicked")
-    },true)//=============> by default its false
+    // document.querySelector("#images").addEventListener('click',function(e){
+    //     alert("ul clicked")
+    // },true)//=============> by default its false
 
-    document.querySelector('#owl').addEventListener('click',function (e) {
-        alert("Owl clicked");     
-    },true)//=============> if false "bubbling": bottom up, if true "Capturing": top down
+    // document.querySelector('#owl').addEventListener('click',function (e) {
+    //     alert("Owl clicked");     
+    // },true)//=============> if false "bubbling": bottom up, if true "Capturing": top down
 
-    document.querySelector("#google").addEventListener('click',function(e){
-        e.preventDefault();//========> stop default properties like click link etc
-        e.stopPropagation();//==============> ul clicked will not be displayed
-        console.log("Google clicked")
+    // document.querySelector("#google").addEventListener('click',function(e){
+    //     e.preventDefault();//========> stop default properties like click link etc
+    //     e.stopPropagation();//==============> ul clicked will not be displayed
+    //     console.log("Google clicked")
 
-    },false)
+    // },false)
 
-    
+    document.querySelector('#images').addEventListener('click',function(e){
+        let removeIt= e.target.parentNode;
+        console.log(removeIt);
+        // e.target.parentNode
+        removeIt.remove();
+        
+    })
 </script>
 </html>

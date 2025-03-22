@@ -9,10 +9,16 @@ button.forEach((element) => {
     console.log(e.target)
     if(e.target.id)
     {
+        
         bodyColor.style.backgroundColor=e.target.id;
+        
     }
   });
 });
+// const greet=document.querySelector(".greeting")
+// setTimeout((e) => {
+//     greet.style.display="block";
+// }, 5000);
 
 
 

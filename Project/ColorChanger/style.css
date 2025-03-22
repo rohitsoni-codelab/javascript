@@ -31,4 +31,6 @@ html {
   #yellow {
     background: yellow;
   }
-  
+.greeting{
+    display: none;
+}  
